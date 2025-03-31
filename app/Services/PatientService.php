@@ -25,15 +25,15 @@ class PatientService
         if($interval->y)
         {
             $patient->age = $interval->y;
-            $patient->age_type = 'year';
+            $patient->age_type = 'год';
         }elseif ($interval->m)
         {
             $patient->age = $interval->m;
-            $patient->age_type = 'month';
+            $patient->age_type = 'месяц';
         }elseif ($interval->d)
         {
             $patient->age = $interval->d;
-            $patient->age_type = 'day';
+            $patient->age_type = 'день';
         }
         return $patient;
     }

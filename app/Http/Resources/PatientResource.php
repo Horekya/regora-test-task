@@ -20,4 +20,8 @@ class PatientResource extends JsonResource
             'age' => $this->age . ' ' . $this->age_type
         ];
     }
+    public function jsonOptions()
+    {
+        return JSON_UNESCAPED_UNICODE;
+    }
 }
